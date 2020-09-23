@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Exchange API</title>
+  </head>
+
+  <body>
+    <div class="container-sm">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="card">
+            <div class="card-header">Exchange API</div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-10">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="amount"
+                    placeholder="Miktar"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-8">
+                  <div>
+                    <select id="firstCurrency" class="form-control">
+                      <option selected>USD</option>
+                      <option>EUR</option>
+                      <option>JPY</option>
+                      <option>BGN</option>
+                      <option>CZK</option>
+                      <option>DKK</option>
+                      <option>GBP</option>
+                      <option>HUF</option>
+                      <option>PLN</option>
+                      <option>RON</option>
+                      <option>SEK</option>
+                      <option>CHF</option>
+                      <option>ISK</option>
+                      <option>NOK</option>
+                      <option>HRK</option>
+                      <option>RUB</option>
+                      <option>TRY</option>
+                      <option>AUD</option>
+                      <option>BRL</option>
+                      <option>CAD</option>
+                      <option>CNY</option>
+                      <option>HKD</option>
+                      <option>IDR</option>
+                      <option>ILS</option>
+                      <option>INR</option>
+                      <option>KRW</option>
+                      <option>MXN</option>
+                      <option>MYR</option>
+                      <option>NZD</option>
+                      <option>PHP</option>
+                      <option>SGD</option>
+                      <option>THB</option>
+                      <option>ZAR</option>
+                    </select>
+                  </div>
+                  <div>
+                    <select id="secondCurrency" class="form-control">
+                      <option>USD</option>
+                      <option>EUR</option>
+                      <option>JPY</option>
+                      <option>BGN</option>
+                      <option>CZK</option>
+                      <option>DKK</option>
+                      <option>GBP</option>
+                      <option>HUF</option>
+                      <option>PLN</option>
+                      <option>RON</option>
+                      <option>SEK</option>
+                      <option>CHF</option>
+                      <option>ISK</option>
+                      <option>NOK</option>
+                      <option>HRK</option>
+                      <option>RUB</option>
+                      <option selected>TRY</option>
+                      <option>AUD</option>
+                      <option>BRL</option>
+                      <option>CAD</option>
+                      <option>CNY</option>
+                      <option>HKD</option>
+                      <option>IDR</option>
+                      <option>ILS</option>
+                      <option>INR</option>
+                      <option>KRW</option>
+                      <option>MXN</option>
+                      <option>MYR</option>
+                      <option>NZD</option>
+                      <option>PHP</option>
+                      <option>SGD</option>
+                      <option>THB</option>
+                      <option>ZAR</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div id="currency" class="card-body d-flex justify-content-around">
+              <div>
+                <span id="outputFirst">USD</span>
+                <span>-</span>
+                <span id="outputSecond">TRY</span>
+              </div>
+
+              <input type="text" readonly id="result" placeholder="Sonuç" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"
+  ></script>
+  <script src="ui.js"></script>
+  <script src="currency.js"></script>
+  <script src="app.js"></script>
+</html>
